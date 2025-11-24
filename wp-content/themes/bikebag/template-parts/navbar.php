@@ -22,7 +22,7 @@ $is_faq = (is_page('faq') || (isset($current_page->post_name) && $current_page->
 $is_terms = (is_page('regulamin') || (isset($current_page->post_name) && $current_page->post_name === 'regulamin'));
 $is_home = is_front_page();
 ?>
-<div class="bg-black h-8 flex items-center justify-center">
+<div class="bg-black h-8 hidden lg:flex items-center justify-center">
   <div class="container mx-auto px-4 flex items-center justify-center gap-8 text-white text-sm">
     <p class="font-black">Skontaktuj się z nami!</p>
     <a href="mailto:biuro@bikebag.pl" class="font-normal hover:underline">biuro@bikebag.pl</a>
@@ -31,7 +31,7 @@ $is_home = is_front_page();
 </div>
 
 <!-- Header -->
-<header class="bg-white shadow-md h-[120px] sticky top-0 z-50 relative">
+<header class="bg-white shadow-2xl h-[120px] sticky top-0 z-50 relative">
   <div class="container mx-auto px-4 h-full flex items-center justify-between">
     <a href="<?= esc_url($home_url); ?>" class="flex items-center">
       <img src="<?= get_template_directory_uri() . '/assets/images/shared/logo.webp' ?>" alt="Bike Bag Logo" class="h-20 w-20 object-contain">
@@ -48,24 +48,28 @@ $is_home = is_front_page();
       </a>
     </nav>
 
-    <button class="lg:hidden w-8 h-8 flex flex-col justify-center gap-1.5" id="mobile-menu-toggle" aria-label="Toggle menu">
-      <span class="w-full h-0.5 bg-black transition-all"></span>
-      <span class="w-full h-0.5 bg-black transition-all"></span>
-      <span class="w-full h-0.5 bg-black transition-all"></span>
+    <button class="lg:hidden w-8 h-8 flex flex-col justify-center gap-1.5 z-50 relative" id="mobile-menu-toggle" aria-label="Toggle menu">
+      <span class="w-full h-0.5 bg-black transition-all" id="hamburger-line-1"></span>
+      <span class="w-full h-0.5 bg-black transition-all" id="hamburger-line-2"></span>
+      <span class="w-full h-0.5 bg-black transition-all" id="hamburger-line-3"></span>
     </button>
     
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white z-50" style="top: 152px; left: 0; right: 0; bottom: 0;">
-      <div class="w-full h-full overflow-y-auto">
+    <div id="mobile-menu-overlay"
+         class="hidden lg:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300"
+         style="top: 121px; left: 0; right: 0; bottom: 0;"
+    ></div>
+    
+    <div id="mobile-menu" class="hidden lg:hidden fixed h-fit inset-0 bg-transparent z-50 pointer-events-none" style="top: 121px; left: 0; right: 0; bottom: 0;">
+      <div class="w-full h-full overflow-y-auto bg-[#D3D3D3] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out">
         <nav class="flex flex-col w-full">
-          <a href="<?= esc_url($offer_url); ?>" class="text-3xl font-normal py-4 border-b border-gray-300 hover:font-bold transition-all text-center w-full <?= $is_offer ? 'font-bold' : ''; ?>">CO OFERUJEMY</a>
-          <a href="<?= esc_url($pricing_url); ?>" class="text-3xl font-normal py-4 border-b border-gray-300 hover:font-bold transition-all text-center w-full <?= $is_pricing ? 'font-bold' : ''; ?>">CENNIK</a>
-          <a href="<?= esc_url($contact_url); ?>" class="text-3xl font-normal py-4 border-b border-gray-300 hover:font-bold transition-all text-center w-full <?= $is_contact ? 'font-bold' : ''; ?>">KONTAKT</a>
-          <a href="<?= esc_url($faq_url); ?>" class="text-3xl font-normal py-4 border-b border-gray-300 hover:font-bold transition-all text-center w-full <?= $is_faq ? 'font-bold' : ''; ?>">FAQ</a>
-          <a href="<?= esc_url($terms_url); ?>" class="text-3xl font-normal py-4 border-b border-gray-300 hover:font-bold transition-all text-center w-full <?= $is_terms ? 'font-bold' : ''; ?>">REGULAMIN</a>
-          <div class="flex justify-center py-4 border-b border-gray-300">
-            <a href="#" class="w-8 h-8 flex items-center justify-center">
-              <i class="fab fa-facebook text-2xl"></i>
+          <a href="<?= esc_url($offer_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_offer ? 'font-bold' : ''; ?>">CO OFERUJEMY</a>
+          <a href="<?= esc_url($pricing_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_pricing ? 'font-bold' : ''; ?>">CENNIK</a>
+          <a href="<?= esc_url($contact_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_contact ? 'font-bold' : ''; ?>">KONTAKT</a>
+          <a href="<?= esc_url($faq_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_faq ? 'font-bold' : ''; ?>">FAQ</a>
+          <a href="<?= esc_url($terms_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_terms ? 'font-bold' : ''; ?>">REGULAMIN</a>
+          <div class="flex justify-center py-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center">
+              <i class="fab fa-facebook text-3xl"></i>
             </a>
           </div>
         </nav>

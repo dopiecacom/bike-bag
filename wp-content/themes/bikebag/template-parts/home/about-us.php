@@ -1,10 +1,10 @@
 <section class="py-20 bg-black text-white relative">
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+       style="background-image: url('<?= get_template_directory_uri() . '/assets/images/home/about-us.webp' ?>'); filter: grayscale(100%); opacity: 0.3;"
+  ></div>
+
   <div class="container mx-auto px-4">
     <div class="relative min-h-[600px] flex items-center">
-      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-           style="background-image: url('<?= get_template_directory_uri() . '/assets/images/home/about-us.webp' ?>'); filter: grayscale(100%); opacity: 0.3;"
-      ></div>
-      
       <div class="relative z-10 max-w-2xl">
         <h2 class="text-5xl font-normal mb-8">Kim jesteśmy?</h2>
         <div class="space-y-4 text-xl font-normal leading-relaxed">

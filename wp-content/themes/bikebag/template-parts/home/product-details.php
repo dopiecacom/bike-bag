@@ -19,15 +19,15 @@
       </div>
 
       <div>
-        <h2 class="text-5xl font-semibold mb-4">
+        <h2 class="text-5xl font-semibold mb-2">
           <span class="font-bold">EVOC</span> Bike Bag Pro
         </h2>
 
-        <p class="text-3xl font-light mb-8 leading-relaxed">
+        <p class="text-3xl font-light mb-6">
           Połączenie bezpieczeństwa, lekkości i funkcjonalności
         </p>
 
-        <ul class="space-y-4 text-xl font-light mb-8 list-disc list-inside">
+        <ul class="space-y-0.5 text-xl font-light mb-8 list-disc list-inside">
           <li>EVOC Bike Bag Pro 305L</li>
           <li>Bezpieczny transport roweru – idealna do modeli MTB, gravel, triathlon, enduro, downhill (do 29")</li>
           <li>Proste i szybkie pakowanie – dzięki systemowi Bike Stand, Frame Pad i Disc Protection</li>

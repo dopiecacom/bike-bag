@@ -1,4 +1,4 @@
-<div class="max-w-4xl mx-auto space-y-6">
+<div class="max-w-[1007px] mx-auto space-y-6">
   <div class="faq-item border-b border-gray-300 pb-6">
     <button class="faq-question w-full flex items-center justify-between text-left text-3xl font-semibold hover:text-gray-700 transition-colors" data-faq="1">
       <span>
@@ -10,7 +10,7 @@
       </svg>
     </button>
 
-    <div class="faq-answer hidden mt-4 text-xl font-normal leading-relaxed">
+    <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out max-h-0 max-w-[910px] mx-auto mt-0 text-xl font-normal leading-relaxed">
       <p class="mb-4">
         <span class="font-semibold">Pytanie: </span>
         Jak mogę zarezerwować walizkę rowerową?
@@ -48,7 +48,8 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-    <div class="faq-answer hidden mt-4 text-xl font-normal leading-relaxed">
+
+    <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out max-h-0 max-w-[910px] mx-auto mt-0 text-xl font-normal leading-relaxed">
       <p>Szczegóły dotyczące transportu i dostawy zostaną ustalone indywidualnie podczas rezerwacji.</p>
     </div>
   </div>
@@ -63,7 +64,8 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-    <div class="faq-answer hidden mt-4 text-xl font-normal leading-relaxed">
+
+    <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out max-h-0 max-w-[910px] mx-auto mt-0 text-xl font-normal leading-relaxed">
       <p>Nasze walizki są dostosowane do większości ram rowerowych, w tym enduro i downhill (do 29").</p>
     </div>
   </div>
@@ -78,7 +80,8 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-    <div class="faq-answer hidden mt-4 text-xl font-normal leading-relaxed">
+
+    <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out max-h-0 max-w-[910px] mx-auto mt-0 text-xl font-normal leading-relaxed">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
@@ -93,7 +96,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-    <div class="faq-answer hidden mt-4 text-xl font-normal leading-relaxed">
+    <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out max-h-0 max-w-[910px] mx-auto mt-0 text-xl font-normal leading-relaxed">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>
@@ -108,7 +111,8 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
-    <div class="faq-answer hidden mt-4 text-xl font-normal leading-relaxed">
+
+    <div class="faq-answer overflow-hidden transition-all duration-300 ease-in-out max-h-0 max-w-[910px] mx-auto mt-0 text-xl font-normal leading-relaxed">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
   </div>

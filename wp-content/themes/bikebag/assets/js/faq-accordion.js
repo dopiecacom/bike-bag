@@ -1,27 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
     const faqQuestions = document.querySelectorAll('.faq-question');
 
+    function closeAnswer(answer, icon) {
+        answer.style.maxHeight = '0px';
+        answer.classList.remove('mt-4');
+        answer.classList.add('mt-0');
+        if (icon) {
+            icon.classList.remove('rotate-180');
+        }
+    }
+
+    function openAnswer(answer, icon) {
+        answer.style.maxHeight = '0px';
+        answer.classList.remove('mt-0');
+        answer.classList.add('mt-4');
+        if (icon) {
+            icon.classList.add('rotate-180');
+        }
+        
+        requestAnimationFrame(function() {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+        });
+    }
+
     faqQuestions.forEach(question => {
         question.addEventListener('click', function() {
             const answer = this.nextElementSibling;
             const icon = this.querySelector('.faq-icon');
-            const isOpen = !answer.classList.contains('hidden');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
 
             // Close all other FAQs
             document.querySelectorAll('.faq-answer').forEach(ans => {
-                ans.classList.add('hidden');
-            });
-            document.querySelectorAll('.faq-icon').forEach(ic => {
-                ic.classList.remove('rotate-180');
+                if (ans !== answer) {
+                    closeAnswer(ans, ans.previousElementSibling.querySelector('.faq-icon'));
+                }
             });
 
             // Toggle current FAQ
             if (isOpen) {
-                answer.classList.add('hidden');
-                icon.classList.remove('rotate-180');
+                closeAnswer(answer, icon);
             } else {
-                answer.classList.remove('hidden');
-                icon.classList.add('rotate-180');
+                openAnswer(answer, icon);
             }
         });
     });
