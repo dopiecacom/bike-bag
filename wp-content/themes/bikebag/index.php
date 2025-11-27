@@ -20,7 +20,7 @@ get_header();
 <section class="home-product-details-section"><?php get_template_part('template-parts/home/product-details'); ?></section>
 <section class="home-gallery-section"><?php get_template_part('template-parts/home/gallery'); ?></section>
 <section class="home-about-us-section"><?php get_template_part('template-parts/home/about-us'); ?></section>
-<section class="home-contact-form-section"><?php get_template_part('template-parts/home/contact-form'); ?></section>
+<section class="home-contact-form-section"><?php get_template_part('template-parts/contact/form'); ?></section>
 
 <?php
 get_footer();
