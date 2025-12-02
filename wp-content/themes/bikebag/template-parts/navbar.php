@@ -34,7 +34,7 @@ $is_home = is_front_page();
 <header class="bg-white shadow-2xl h-[120px] sticky top-0 z-50 relative">
   <div class="container mx-auto px-4 h-full flex items-center justify-between">
     <a href="<?= esc_url($home_url); ?>" class="flex items-center">
-      <img src="<?= get_template_directory_uri() . '/assets/images/shared/logo.webp' ?>" alt="Bike Bag Logo" class="h-20 w-20 object-contain">
+      <img src="<?= get_template_directory_uri() . '/assets/images/shared/logo.webp' ?>" alt="Bike Bag Logo" class="h-20 w-36 object-contain">
     </a>
 
     <nav class="hidden lg:flex items-center gap-8">
