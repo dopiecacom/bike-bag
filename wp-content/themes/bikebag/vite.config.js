@@ -9,4 +9,9 @@ export default {
         }),
        tailwindcss(),
     ],
+    server: {
+        host: '0.0.0.0',
+        hmr: { host: 'bike.local' },
+        cors: true,
+    },
 };

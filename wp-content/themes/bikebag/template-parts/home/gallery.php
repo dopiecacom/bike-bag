@@ -1,4 +1,4 @@
-<section class="py-20 bg-gray-200">
+<section class="py-10 2xl:py-20 bg-gray-200">
   <div class="w-full max-w-[1920px] mx-auto px-4">
     <swiper-container class="gallery-swiper" slides-per-view="auto" space-between="24">
       <swiper-slide style="width: auto;">

@@ -13,4 +13,6 @@
 @theme {
     --font-sans: 'Rajdhani', 'Lato', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-bike-purple: #8970D3;
+    --shadow-soft: -4px -1px 8px 1px;
 }

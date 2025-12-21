@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
         body.style.overflow = 'hidden';
         
         if (hamburgerLine1 && hamburgerLine2 && hamburgerLine3) {
-            hamburgerLine1.style.transform = 'rotate(45deg) translateY(8px)';
+            hamburgerLine1.style.transform = 'rotate(45deg) translateY(11px)';
             hamburgerLine2.style.opacity = '0';
-            hamburgerLine3.style.transform = 'rotate(-45deg) translateY(-8px)';
+            hamburgerLine3.style.transform = 'rotate(-45deg) translateY(-12.5px)';
         }
     }
 

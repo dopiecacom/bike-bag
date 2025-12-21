@@ -22,19 +22,35 @@ $is_faq = (is_page('faq') || (isset($current_page->post_name) && $current_page->
 $is_terms = (is_page('regulamin') || (isset($current_page->post_name) && $current_page->post_name === 'regulamin'));
 $is_home = is_front_page();
 ?>
-<div class="bg-black h-8 hidden lg:flex items-center justify-center">
+<div class="bg-black h-8 flex items-center justify-center">
   <div class="container mx-auto px-4 flex items-center justify-center gap-8 text-white text-sm">
-    <p class="font-black">Skontaktuj się z nami!</p>
-    <a href="mailto:biuro@bikebag.pl" class="font-normal hover:underline">biuro@bikebag.pl</a>
-    <a href="tel:+48732730732" class="font-normal hover:underline">Telefon: 732-730-732</a>
+    <p class="hidden sm:block font-black">Skontaktuj się z nami!</p>
+    <div class="flex space-x-2">
+      <svg class="w-5 h-5 fill-bike-purple" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+      </svg>
+      <a href="mailto:biuro@bikebag.pl" class="hover:underline">biuro@bikebag.pl</a>
+    </div>
+
+    <div class="flex space-x-2">
+      <svg class="w-5 h-5 fill-bike-purple" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+      </svg>
+
+      <a href="tel:+48732730732" class="hover:underline">Telefon: 732-730-732</a>
+    </div>
   </div>
 </div>
 
 <!-- Header -->
-<header class="bg-white shadow-2xl h-[120px] sticky top-0 z-50 relative">
-  <div class="container mx-auto px-4 h-full flex items-center justify-between">
+<header class="bg-white shadow-soft h-[72px] lg:h-[120px] sticky top-0 z-50 relative">
+  <div class="max-w-4xl 2xl:container mx-auto px-4 h-full flex items-center justify-between">
     <a href="<?= esc_url($home_url); ?>" class="flex items-center">
-      <img src="<?= get_template_directory_uri() . '/assets/images/shared/logo.webp' ?>" alt="Bike Bag Logo" class="h-20 w-36 object-contain">
+      <img src="<?= get_template_directory_uri() . '/assets/images/shared/logo.webp' ?>"
+           alt="Bike Bag Logo"
+           class="h-10 lg:h-20 lg:w-36 object-contain"
+      />
     </a>
 
     <nav class="hidden lg:flex items-center gap-8">
