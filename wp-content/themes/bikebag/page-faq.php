@@ -8,10 +8,10 @@
 get_header();
 ?>
 
-<section class="py-20 bg-white">
-  <div class="max-w-[1007px] mx-auto px-4">
-    <h1 class="text-5xl font-semibold mb-16">
-      <span class="font-semibold">Najczęściej </span>
+<section class="py-12 2xl:py-20 bg-white">
+  <div class="max-w-[1144px] mx-auto px-6">
+    <h1 class="text-[32px] mb-6 leading-8">
+      <span class="font-semibold">Najczęściej </span> <br/>
       <span class="font-normal">zadawane pytania:</span>
     </h1>
 

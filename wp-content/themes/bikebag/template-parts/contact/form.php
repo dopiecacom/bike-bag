@@ -2,7 +2,7 @@
   <div class="container mx-auto px-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <div>
-        <h1 class="text-[32px] 2xl:text-[56px] font-normal mb-1 2xl:leading-14">Skontaktuj się z nami</h1>
+        <h1 class="text-[32px] 2xl:text-[56px] font-normal mb-1 2xl:leading-16">Skontaktuj się z nami</h1>
         <p class="2xl:text-xl font-normal leading-relaxed">
           Masz pytania odnośnie produktu, a może chcesz już zamówić walizkę?<br>
           Po prostu skorzystaj z naszego formularza.
