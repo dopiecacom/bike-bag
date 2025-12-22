@@ -2,7 +2,7 @@
   <div class="container mx-auto px-4">
     <div class="flex flex-col lg:flex-row-reverse gap-12 items-start">
       <div>
-        <h2 class="text-[32px] 2xl:text-5xl font-semibold">
+        <h2 class="text-[32px] 2xl:text-5xl font-semibold leading-8 2xl:leading-12">
           <span class="font-bold">EVOC</span> Bike Bag Pro
         </h2>
 
@@ -30,7 +30,7 @@
       </div>
 
       <div class="overflow-hidden max-w-sm">
-        <swiper-container class="product-swiper" slides-per-view="1" navigation="true" pagination="true">
+        <swiper-container class="product-swiper" slides-per-view="1" navigation="true">
           <swiper-slide>
             <img src="<?= get_template_directory_uri() . '/assets/images/home/bike-bag-detail.webp' ?>" alt="EVOC Bike Bag Pro"
                  class="w-full h-auto rounded-lg">
