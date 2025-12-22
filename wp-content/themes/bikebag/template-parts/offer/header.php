@@ -18,9 +18,51 @@
       </div>
     </div>
 
-    <div class="max-w-4xl mx-auto mb-4">
-      <img src="<?= get_template_directory_uri() . '/assets/images/offer/bike-bag-detail.webp' ?>" alt="EVOC Bike Bag Pro"
-           class="w-full h-auto rounded-lg">
+    <div class="relative lg:max-w-[752px] 2xl:max-w-7xl mx-auto overflow-hidden">
+      <swiper-container class="product-swiper max-w-[214px] 2xl:max-w-[740px] mx-auto"
+                        slides-per-view="1"
+                        navigation-prev-el=".custom-prev-button"
+                        navigation-next-el=".custom-next-button"
+                        navigation="true"
+                        thumbs-swiper=".gallery-thumbs"
+      >
+        <swiper-slide>
+          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-1.webp' ?>" alt="EVOC Bike Bag Pro"
+               class="w-full h-auto rounded-lg">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-2.webp' ?>" alt="EVOC Bike Bag Pro"
+               class="w-full h-auto rounded-lg">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-3.webp' ?>" alt="EVOC Bike Bag Pro"
+               class="w-full h-auto rounded-lg">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-4.webp' ?>" alt="EVOC Bike Bag Pro"
+               class="w-full h-auto rounded-lg">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-5.webp' ?>" alt="EVOC Bike Bag Pro"
+               class="w-full h-auto rounded-lg">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="<?= get_template_directory_uri() . '/assets/images/home/bike-bag-hero.webp' ?>" alt="EVOC Bike Bag Pro"
+               class="w-full h-auto rounded-lg">
+        </swiper-slide>
+        <swiper-slide>
+          <img src="<?= get_template_directory_uri() . '/assets/images/home/bike-bag-detail.webp' ?>" alt="EVOC Bike Bag Pro"
+               class="w-full h-auto rounded-lg">
+        </swiper-slide>
+      </swiper-container>
+
+      <div class="swiper-arrow custom-prev-button absolute top-1/2 left-0 -translate-y-1/2 z-10 cursor-pointer">
+        <i class="fa-solid fa-chevron-left px-3 py-0.5 text-bike-purple text-3xl"></i>
+      </div>
+
+      <div class="swiper-arrow custom-next-button absolute top-1/2 right-0 -translate-y-1/2 z-10">
+        <i class="fa-solid fa-chevron-right px-3 py-0.5 text-bike-purple text-3xl cursor-pointer"></i>
+      </div>
     </div>
   </div>
 </section>

@@ -67,11 +67,11 @@
           </swiper-slide>
         </swiper-container>
 
-        <div class="swiper-arrow custom-prev-button absolute top-1/2 left-0 -translate-y-1/2 z-10">
+        <div class="swiper-arrow custom-prev-button absolute top-1/2 left-0 -translate-y-1/2 z-10 cursor-pointer">
           <i class="fa-solid fa-chevron-left px-3 py-0.5 text-bike-purple text-3xl"></i>
         </div>
 
-        <div class="swiper-arrow custom-next-button absolute top-1/2 right-0 -translate-y-1/2 z-10">
+        <div class="swiper-arrow custom-next-button absolute top-1/2 right-0 -translate-y-1/2 z-10 cursor-pointer">
           <i class="fa-solid fa-chevron-right px-3 py-0.5 text-bike-purple text-3xl"></i>
         </div>
       </div>
