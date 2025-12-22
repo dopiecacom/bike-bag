@@ -8,7 +8,7 @@
 get_header();
 ?>
 
-<section class="py-12 2xl:py-20 bg-white">
+<section class="py-12 2xl:py-16 bg-white">
   <div class="max-w-[1144px] mx-auto px-6">
     <h1 class="text-[32px] mb-6 leading-8">
       <span class="font-semibold">Najczęściej </span> <br/>

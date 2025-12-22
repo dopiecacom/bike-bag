@@ -1,51 +1,15 @@
-<div class="max-w-4xl mx-auto mb-20">
-  <div class="border-b-2 border-black mb-8">
-    <div class="grid grid-cols-2 gap-8 pb-4">
-      <div>
-        <h2 class="text-3xl font-semibold">Okres wynajmu</h2>
-      </div>
-      
-      <div>
-        <h2 class="text-3xl font-semibold">Cena za 1 walizkę</h2>
-      </div>
-    </div>
+<div class="grid grid-cols-2 max-w-[1144px] mx-auto gap-[20px] mb-10 px-6 sm:px-10 lg:px-12 xl:px-0">
+  <div class="flex flex-col space-y-3">
+    <div class="pb-2 font-semibold border-b border-black">Okres wynajmu</div>
+    <div class="pb-2 border-b border-[#BCBCBC]">Do 10 dni</div>
+    <div class="pb-2 border-b border-[#BCBCBC]">Każdy następny dzień</div>
+    <div class="pb-2 border-b border-[#BCBCBC]">Wynajem na dłuższy termin</div>
   </div>
-  
-  <div class="space-y-6">
-    <div class="border-b border-gray-300 pb-6">
-      <div class="grid grid-cols-2 gap-8">
-        <div>
-          <p class="text-xl font-normal">Do 10 dni</p>
-        </div>
 
-        <div>
-          <p class="text-xl font-normal">299 PLN netto</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="border-b border-gray-300 pb-6">
-      <div class="grid grid-cols-2 gap-8">
-        <div>
-          <p class="text-xl font-normal">Każdy następny dzień</p>
-        </div>
-
-        <div>
-          <p class="text-xl font-normal">+30 PLN netto</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="border-b border-gray-300 pb-6">
-      <div class="grid grid-cols-2 gap-8">
-        <div>
-          <p class="text-xl font-normal">Wynajem na dłuższy termin</p>
-        </div>
-
-        <div>
-          <p class="text-xl font-normal">Cena ustalana indywidualnie</p>
-        </div>
-      </div>
-    </div>
+  <div class="flex flex-col space-y-3">
+    <div class="pb-2 font-semibold border-b border-black">Cena za 1 walizkę</div>
+    <div class="pb-2 border-b border-[#BCBCBC]">299 PLN netto</div>
+    <div class="pb-2 border-b border-[#BCBCBC]">+30 PLN netto</div>
+    <div class="pb-2 border-b border-[#BCBCBC]">Cena ustalana indywidualnie</div>
   </div>
 </div>

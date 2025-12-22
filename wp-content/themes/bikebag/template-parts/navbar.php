@@ -45,7 +45,7 @@ $is_home = is_front_page();
 
 <!-- Header -->
 <header class="bg-white shadow-soft h-[72px] lg:h-[120px] sticky top-0 z-50 relative">
-  <div class="max-w-4xl 2xl:container mx-auto px-4 h-full flex items-center justify-between">
+  <div class="max-w-4xl lg:container mx-auto px-4 h-full flex items-center justify-between">
     <a href="<?= esc_url($home_url); ?>" class="flex items-center">
       <img src="<?= get_template_directory_uri() . '/assets/images/shared/logo.webp' ?>"
            alt="Bike Bag Logo"
@@ -72,10 +72,10 @@ $is_home = is_front_page();
     
     <div id="mobile-menu-overlay"
          class="hidden lg:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300"
-         style="top: 121px; left: 0; right: 0; bottom: 0;"
+         style="top: 104px; left: 0; right: 0; bottom: 0;"
     ></div>
     
-    <div id="mobile-menu" class="hidden lg:hidden fixed h-fit inset-0 bg-transparent z-50 pointer-events-none" style="top: 121px; left: 0; right: 0; bottom: 0;">
+    <div id="mobile-menu" class="hidden lg:hidden fixed h-fit inset-0 bg-transparent z-50 pointer-events-none" style="top: 104px; left: 0; right: 0; bottom: 0;">
       <div class="w-full h-full overflow-y-auto bg-[#D3D3D3] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out">
         <nav class="flex flex-col w-full">
           <a href="<?= esc_url($offer_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_offer ? 'font-bold' : ''; ?>">CO OFERUJEMY</a>
