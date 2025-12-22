@@ -16,3 +16,20 @@
     --color-bike-purple: #8970D3;
     --shadow-soft: -4px -1px 8px 1px;
 }
+
+.swiper-button-next {
+    color: #1D2622;
+    background: #C8D1C6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+swiper-container::part(button-prev) {
+    color: var(--color-bike-purple);
+}
+
+swiper-container::part(button-next) {
+    color: var(--color-bike-purple);
+}

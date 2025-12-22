@@ -60,7 +60,7 @@ $is_home = is_front_page();
       <a href="<?= esc_url($faq_url); ?>" class="text-xl <?= $is_faq ? 'font-bold' : 'font-normal'; ?> hover:font-bold transition-all">FAQ</a>
       <a href="<?= esc_url($terms_url); ?>" class="text-xl <?= $is_terms ? 'font-bold' : 'font-normal'; ?> hover:font-bold transition-all">REGULAMIN</a>
       <a href="#" class="w-8 h-8 flex items-center justify-center">
-        <i class="fab fa-facebook text-xl"></i>
+        <i class="fab fa-facebook text-bike-purple hover:text-black text-3xl transition-colors"></i>
       </a>
     </nav>
 

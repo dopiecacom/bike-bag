@@ -1,4 +1,4 @@
-<section class="py-12 bg-white">
+<section class="py-12 2xl:py-20 bg-white">
   <div class="max-w-5xl mx-auto px-4">
     <h2 class="text-[32px] 2xl:text-6xl font-semibold mb-8 leading-8 lg:leading-14">
       <span class="block">Dlaczgo warto</span>

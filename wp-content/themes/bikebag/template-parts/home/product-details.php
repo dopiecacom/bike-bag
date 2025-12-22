@@ -1,7 +1,7 @@
-<section class="py-12 bg-white">
+<section class="py-12 2xl:py-20 bg-white">
   <div class="container mx-auto px-4">
     <div class="flex flex-col lg:flex-row-reverse gap-12 items-start">
-      <div>
+      <div class="flex flex-col w-full">
         <h2 class="text-[32px] 2xl:text-5xl font-semibold leading-8 2xl:leading-12">
           <span class="font-bold">EVOC</span> Bike Bag Pro
         </h2>
@@ -21,18 +21,40 @@
           <li>Pojemność 305 L, waga 9,6 kg – lekka, funkcjonalna i maksymalnie bezpieczna</li>
         </ul>
 
-        <div class="flex mx-auto">
+        <div class="flex mx-auto lg:ml-0">
           <a href="<?= esc_url(get_permalink(get_page_by_path('kontakt')) ?: home_url('/kontakt/')); ?>"
-             class="inline-block border-2 border-black mx-auto px-10 py-4 rounded-full text-xl font-medium uppercase hover:bg-black hover:text-white transition-all">
+             class="inline-block border-2 border-black mx-auto lg:ml-0 px-10 py-4 2xl:py-3 rounded-full text-xl font-medium uppercase hover:bg-black hover:text-white transition-all">
             WYNAJMIJ JUŻ TERAZ
           </a>
         </div>
       </div>
 
-      <div class="overflow-hidden max-w-sm">
-        <swiper-container class="product-swiper" slides-per-view="1" navigation="true">
+      <div class="relative overflow-hidden max-w-sm">
+        <swiper-container class="product-swiper"
+                          slides-per-view="1"
+                          navigation-prev-el=".custom-prev-button"
+                          navigation-next-el=".custom-next-button"
+                          navigation="true"
+                          thumbs-swiper=".gallery-thumbs"
+        >
           <swiper-slide>
-            <img src="<?= get_template_directory_uri() . '/assets/images/home/bike-bag-detail.webp' ?>" alt="EVOC Bike Bag Pro"
+            <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-1.webp' ?>" alt="EVOC Bike Bag Pro"
+                 class="w-full h-auto rounded-lg">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-2.webp' ?>" alt="EVOC Bike Bag Pro"
+                 class="w-full h-auto rounded-lg">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-3.webp' ?>" alt="EVOC Bike Bag Pro"
+                 class="w-full h-auto rounded-lg">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-4.webp' ?>" alt="EVOC Bike Bag Pro"
+                 class="w-full h-auto rounded-lg">
+          </swiper-slide>
+          <swiper-slide>
+            <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-5.webp' ?>" alt="EVOC Bike Bag Pro"
                  class="w-full h-auto rounded-lg">
           </swiper-slide>
           <swiper-slide>
@@ -40,10 +62,18 @@
                  class="w-full h-auto rounded-lg">
           </swiper-slide>
           <swiper-slide>
-            <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-1.webp' ?>" alt="EVOC Bike Bag Pro"
+            <img src="<?= get_template_directory_uri() . '/assets/images/home/bike-bag-detail.webp' ?>" alt="EVOC Bike Bag Pro"
                  class="w-full h-auto rounded-lg">
           </swiper-slide>
         </swiper-container>
+
+        <div class="swiper-arrow custom-prev-button absolute top-1/2 left-0 -translate-y-1/2 z-10">
+          <i class="fa-solid fa-chevron-left px-3 py-0.5 text-bike-purple text-3xl"></i>
+        </div>
+
+        <div class="swiper-arrow custom-next-button absolute top-1/2 right-0 -translate-y-1/2 z-10">
+          <i class="fa-solid fa-chevron-right px-3 py-0.5 text-bike-purple text-3xl"></i>
+        </div>
       </div>
     </div>
   </div>
