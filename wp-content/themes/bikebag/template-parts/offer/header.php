@@ -1,3 +1,15 @@
+<?php
+$slides = [
+    get_template_directory_uri() . '/assets/images/home/bike-bag-hero.webp',
+    get_template_directory_uri() . '/assets/images/home/gallery-1.webp',
+    get_template_directory_uri() . '/assets/images/home/gallery-3.webp',
+    get_template_directory_uri() . '/assets/images/home/gallery-2.webp',
+    get_template_directory_uri() . '/assets/images/home/gallery-5.webp',
+    get_template_directory_uri() . '/assets/images/home/gallery-4.webp',
+    get_template_directory_uri() . '/assets/images/home/gallery-6.webp',
+];
+?>
+
 <section class="py-12 2xl:py-20 bg-white">
   <div class="container mx-auto px-6 sm:px-10 lg:px-12 xl:px-0">
     <div class="flex flex-col 2xl:flex-row justify-between items-center max-w-7xl mx-auto mb-16">
@@ -26,34 +38,14 @@
                         navigation="true"
                         thumbs-swiper=".gallery-thumbs"
       >
-        <swiper-slide>
-          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-1.webp' ?>" alt="EVOC Bike Bag Pro"
-               class="w-full h-auto rounded-lg">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-2.webp' ?>" alt="EVOC Bike Bag Pro"
-               class="w-full h-auto rounded-lg">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-3.webp' ?>" alt="EVOC Bike Bag Pro"
-               class="w-full h-auto rounded-lg">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-4.webp' ?>" alt="EVOC Bike Bag Pro"
-               class="w-full h-auto rounded-lg">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="<?= get_template_directory_uri() . '/assets/images/home/gallery-5.webp' ?>" alt="EVOC Bike Bag Pro"
-               class="w-full h-auto rounded-lg">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="<?= get_template_directory_uri() . '/assets/images/home/bike-bag-hero.webp' ?>" alt="EVOC Bike Bag Pro"
-               class="w-full h-auto rounded-lg">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="<?= get_template_directory_uri() . '/assets/images/home/bike-bag-detail.webp' ?>" alt="EVOC Bike Bag Pro"
-               class="w-full h-auto rounded-lg">
-        </swiper-slide>
+        <?php foreach ($slides as $index => $slide): ?>
+          <swiper-slide style="width: auto; cursor: pointer;">
+            <img src="<?= $slide ?>"
+                 alt="<?= "Gallery $index" ?>"
+                 class="w-full h-auto rounded-lg"
+            />
+          </swiper-slide>
+        <?php endforeach; ?>
       </swiper-container>
 
       <div class="swiper-arrow custom-prev-button absolute top-1/2 left-0 -translate-y-1/2 z-10 cursor-pointer">

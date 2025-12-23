@@ -1,6 +1,6 @@
 <section class="py-12 2xl:py-20 bg-white">
   <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-[32px] 2xl:text-6xl font-semibold mb-8 leading-8 lg:leading-14">
+    <h2 class="text-[32px] 2xl:text-6xl font-semibold mb-8 leading-8 2xl:leading-14">
       <span class="block">Dlaczgo warto</span>
       <span class="block font-normal">wynająć u nas?</span>
     </h2>
@@ -55,7 +55,7 @@
           />
         </div>
 
-        <h3 class="2xl:text-2xl font-light mb-2 lato">Profesjonalna obsługa</h3>
+        <h3 class="2xl:text-xl font-light mb-2 lato">Profesjonalna obsługa</h3>
       </div>
     </div>
   </div>
