@@ -24,3 +24,15 @@ swiper-container::part(button-prev) {
 swiper-container::part(button-next) {
     color: var(--color-bike-purple);
 }
+
+.wpcf7-form > div > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 768px) {
+    .wpcf7-form > div > p {
+        align-items: start;
+    }
+}

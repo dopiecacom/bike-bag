@@ -10,7 +10,7 @@
         <div class="flex-shrink-0">
           <img src="<?= get_template_directory_uri() . '/assets/images/shared/icon-location.webp' ?>"
                alt="Lokalizacja"
-               class="w-24 h-24 object-contain"
+               class="w-22 h-22 object-contain"
           />
         </div>
 
@@ -23,7 +23,7 @@
         <div class="flex-shrink-0">
           <img src="<?= get_template_directory_uri() . '/assets/images/shared/icon-plane.webp' ?>"
                alt="Samolot"
-               class="w-24 h-24 object-contain"
+               class="w-22 h-22 object-contain"
           />
         </div>
 
@@ -37,7 +37,7 @@
         <div class="flex-shrink-0">
           <img src="<?= get_template_directory_uri() . '/assets/images/shared/icon-bike.webp' ?>"
                alt="Rower"
-               class="w-24 h-24 object-contain"
+               class="w-22 h-22 object-contain"
           />
         </div>
 
@@ -51,7 +51,7 @@
         <div class="flex-shrink-0">
           <img src="<?= get_template_directory_uri() . '/assets/images/shared/icon-service.webp' ?>"
                alt="Obsługa"
-               class="w-24 h-24 object-contain"
+               class="w-22 h-22 object-contain"
           />
         </div>
 

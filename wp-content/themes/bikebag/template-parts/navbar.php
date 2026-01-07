@@ -22,7 +22,7 @@ $is_faq = (is_page('faq') || (isset($current_page->post_name) && $current_page->
 $is_terms = (is_page('regulamin') || (isset($current_page->post_name) && $current_page->post_name === 'regulamin'));
 $is_home = is_front_page();
 ?>
-<div class="bg-black h-8 flex items-center justify-center">
+<div class="sticky top-0 z-50 bg-black h-8 flex items-center justify-center">
   <div class="container mx-auto px-4 flex items-center justify-center gap-8 text-white text-sm">
     <p class="hidden sm:block font-black">Skontaktuj się z nami!</p>
     <div class="flex space-x-2">
@@ -44,7 +44,7 @@ $is_home = is_front_page();
 </div>
 
 <!-- Header -->
-<header class="bg-white shadow-soft h-[72px] lg:h-[120px] sticky top-0 z-50 relative">
+<header class="bg-white shadow-soft h-[72px] lg:h-[120px] sticky top-[32px] z-50 relative">
   <div class="max-w-4xl lg:container mx-auto px-4 h-full flex items-center justify-between">
     <a href="<?= esc_url($home_url); ?>" class="flex items-center">
       <img src="<?= get_template_directory_uri() . '/assets/images/shared/logo.webp' ?>"

@@ -17,7 +17,7 @@
               class="w-full bg-gray-200 rounded-3xl px-6 py-4 text-xl focus:outline-none focus:ring-2 focus:ring-black resize-none"></textarea>
   </div>
   <button type="submit"
-          class="inline-block border-2 border-black px-10 py-4 rounded-full text-xl font-medium uppercase hover:bg-black hover:text-white transition-all">
+          class="inline-block w-fit border-2 border-black px-10 py-4 rounded-full text-xl font-medium uppercase hover:bg-black hover:text-white transition-all">
     wyślij wiadomość
   </button>
 </form>

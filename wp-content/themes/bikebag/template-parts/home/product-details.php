@@ -41,8 +41,8 @@ $slides = [
         </div>
       </div>
 
-      <div class="relative overflow-hidden max-w-sm">
-        <swiper-container class="product-swiper"
+      <div class="relative max-w-[345px] sm:max-w-sm mx-auto">
+        <swiper-container class="product-swiper px-2"
                           slides-per-view="1"
                           navigation-prev-el=".custom-prev-button"
                           navigation-next-el=".custom-next-button"
@@ -59,11 +59,11 @@ $slides = [
           <?php endforeach; ?>
         </swiper-container>
 
-        <div class="swiper-arrow custom-prev-button absolute top-1/2 left-0 -translate-y-1/2 z-10 cursor-pointer">
+        <div class="swiper-arrow custom-prev-button absolute top-1/2 -left-4 -translate-y-1/2 z-10 cursor-pointer">
           <i class="fa-solid fa-chevron-left px-3 py-0.5 text-bike-purple text-3xl"></i>
         </div>
 
-        <div class="swiper-arrow custom-next-button absolute top-1/2 right-0 -translate-y-1/2 z-10 cursor-pointer">
+        <div class="swiper-arrow custom-next-button absolute top-1/2 -right-4 -translate-y-1/2 z-10 cursor-pointer">
           <i class="fa-solid fa-chevron-right px-3 py-0.5 text-bike-purple text-3xl"></i>
         </div>
       </div>

@@ -64,6 +64,7 @@
           $contact_url = get_permalink(get_page_by_path('kontakt'));
           $faq_url = get_permalink(get_page_by_path('faq'));
           $terms_url = get_permalink(get_page_by_path('regulamin'));
+          $privacy_url = get_template_directory_uri() . '/assets/documents/Polityka prywatności BIKEBAG.pdf';
           
           if (!$offer_url) $offer_url = home_url('/co-oferujemy/');
           if (!$pricing_url) $pricing_url = home_url('/cennik/');
@@ -76,7 +77,7 @@
           <li><a href="<?= esc_url($contact_url); ?>" class="hover:font-bold hover:underline <?= $is_contact ? 'font-bold underline' : ''; ?>">Kontakt</a></li>
           <li><a href="<?= esc_url($faq_url); ?>" class="hover:font-bold hover:underline <?= $is_faq ? 'font-bold underline' : ''; ?>">FAQ</a></li>
           <li><a href="<?= esc_url($terms_url); ?>" class="hover:font-bold hover:underline <?= $is_terms ? 'font-bold underline' : ''; ?>">Regulamin</a></li>
-          <li><a href="#" class="hover:font-bold hover:underline">Polityka prywatności</a></li>
+          <li><a download href="<?= esc_url($privacy_url); ?>" class="hover:font-bold hover:underline">Polityka prywatności</a></li>
         </ul>
       </div>
     </div>
