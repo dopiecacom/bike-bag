@@ -76,7 +76,7 @@ $is_home = is_front_page();
     ></div>
     
     <div id="mobile-menu" class="hidden lg:hidden fixed h-fit inset-0 bg-transparent z-50 pointer-events-none" style="top: 104px; left: 0; right: 0; bottom: 0;">
-      <div class="w-full h-full overflow-y-auto bg-[#D3D3D3] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="w-full min-h-full h-full overflow-y-auto bg-[#D3D3D3] shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out">
         <nav class="flex flex-col w-full">
           <a href="<?= esc_url($offer_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_offer ? 'font-bold' : ''; ?>">CO OFERUJEMY</a>
           <a href="<?= esc_url($pricing_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_pricing ? 'font-bold' : ''; ?>">CENNIK</a>
