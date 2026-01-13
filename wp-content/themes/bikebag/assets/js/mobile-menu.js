@@ -11,15 +11,22 @@ document.addEventListener('DOMContentLoaded', function() {
     function openMenu() {
         if (!mobileMenu || !mobileMenuOverlay || !mobileMenuContent) return;
         
+        // Remove hidden and pointer-events-none first
         mobileMenuOverlay.classList.remove('hidden');
         mobileMenu.classList.remove('hidden');
         mobileMenu.classList.remove('pointer-events-none');
         
+        // Force reflow for iOS
+        mobileMenu.offsetHeight;
+        
+        // Use double requestAnimationFrame for better iOS compatibility
         requestAnimationFrame(function() {
-            mobileMenuOverlay.classList.remove('opacity-0');
-            mobileMenuOverlay.classList.add('opacity-100');
-            mobileMenuContent.classList.remove('-translate-x-full');
-            mobileMenuContent.classList.add('translate-x-0');
+            requestAnimationFrame(function() {
+                mobileMenuOverlay.classList.remove('opacity-0');
+                mobileMenuOverlay.classList.add('opacity-100');
+                mobileMenuContent.classList.remove('-translate-x-full');
+                mobileMenuContent.classList.add('translate-x-0');
+            });
         });
         
         body.style.overflow = 'hidden';
