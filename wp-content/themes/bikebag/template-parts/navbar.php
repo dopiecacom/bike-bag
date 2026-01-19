@@ -59,8 +59,11 @@ $is_home = is_front_page();
       <a href="<?= esc_url($contact_url); ?>" class="text-xl <?= $is_contact ? 'font-bold' : 'font-normal'; ?> hover:font-bold transition-all">KONTAKT</a>
       <a href="<?= esc_url($faq_url); ?>" class="text-xl <?= $is_faq ? 'font-bold' : 'font-normal'; ?> hover:font-bold transition-all">FAQ</a>
       <a href="<?= esc_url($terms_url); ?>" class="text-xl <?= $is_terms ? 'font-bold' : 'font-normal'; ?> hover:font-bold transition-all">REGULAMIN</a>
-      <a href="#" class="w-8 h-8 flex items-center justify-center">
-        <i class="fab fa-facebook text-bike-purple hover:text-black text-3xl transition-colors"></i>
+      <a href="https://www.instagram.com/bikebag.pl"
+         target="_blank"
+         class="w-8 h-8 flex items-center justify-center"
+      >
+        <i class="fab fa-instagram-square text-bike-purple hover:text-black text-3xl transition-colors"></i>
       </a>
     </nav>
 
@@ -84,8 +87,11 @@ $is_home = is_front_page();
           <a href="<?= esc_url($faq_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_faq ? 'font-bold' : ''; ?>">FAQ</a>
           <a href="<?= esc_url($terms_url); ?>" class="text-3xl font-normal py-4 border-b border-white hover:font-bold transition-all text-center w-full <?= $is_terms ? 'font-bold' : ''; ?>">REGULAMIN</a>
           <div class="flex justify-center py-4">
-            <a href="#" class="w-10 h-10 flex items-center justify-center">
-              <i class="fab fa-facebook text-3xl"></i>
+            <a href="https://www.instagram.com/bikebag.pl"
+               target="_blank"
+               class="w-10 h-10 flex items-center justify-center"
+            >
+              <i class="fab fa-instagram-square text-3xl"></i>
             </a>
           </div>
         </nav>
